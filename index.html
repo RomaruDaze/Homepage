@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name's Homepage</title>
+    <style>
+        /* Define the styles for the animated element */
+        .animated-element {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: relative;
+            animation: moveAnimation 2s ease-in-out infinite alternate;
+        }
+
+        /* Define the animation keyframes */
+        @keyframes moveAnimation {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 200px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, GitHub Pages!</h1>
-    <h2>My name is Roger</h2>
+    <!-- Create the HTML element to be animated -->
+    <div class="animated-element"></div>
 </body>
 </html>
